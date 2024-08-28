@@ -21,7 +21,7 @@ plotNum <- 19
 
 ###	Define function for sample simulation
 
-sampleSim = function(plotSize.m, plotNum, iterNum){
+sampleSim = function(plotSize.m, plotNum){
 
 #	Calculate plot area in hectares
 plotArea.ha = (plotSize.m^2)/10000
@@ -55,7 +55,7 @@ stemmap.df$agb.kg[i] = round(exp(temp.b0 + temp.b1*log(stemmap.df$dbh.cm[i])), d
 #	Bracket for end of stem-mass "for" loop
 }
 
-
+###########################################################Code that works for us 
 
 ###	Define the size of the spatially explicit stem map dataset in meters. Note the sizes calculated are not necessarily the area of the plot, but the area defined by the outer-most stems mapped within the plot. Calculated distances are rounded up to the nearest meter.
 
